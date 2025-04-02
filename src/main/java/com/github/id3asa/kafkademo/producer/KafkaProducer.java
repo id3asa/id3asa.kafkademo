@@ -1,4 +1,4 @@
-package main.java.com.github.id3asa.kafkademo;
+package main.java.com.github.id3asa.kafkademo.producer;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;

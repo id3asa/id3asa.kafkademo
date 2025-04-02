@@ -1,4 +1,4 @@
-package main.java.com.github.id3asa.kafkademo;
+package main.java.com.github.id3asa.kafkademo.consumer;
 
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;

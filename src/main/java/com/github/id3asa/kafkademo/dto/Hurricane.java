@@ -1,5 +1,14 @@
-package main.java.com.github.id3asa.kafkademo;
+package main.java.com.github.id3asa.kafkademo.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString(of = { "name", "dateOfLandfall", "categoryAtLandfall", "maximumSustainedWinds", "centralPressureAtLandfall", "estimatedDamage", "fatalities", "notes" })
 public class Hurricane {
     String name;
     String dateOfLandfall;
@@ -9,18 +18,6 @@ public class Hurricane {
     String estimatedDamage;
     String fatalities;
     String notes;
-
-    public Hurricane(@JsonProperty String name, @JsonProperty String dateOfLandfall, @JsonProperty String categoryAtLandfall, @JsonProperty String maximumSustainedWinds,
-    @JsonProperty String centralPressureAtLandfall, @JsonProperty String estimatedDamage, @JsonProperty String fatalities, String notes) {
-        this.name = name;
-        this.dateOfLandfall = dateOfLandfall;
-        this.categoryAtLandfall = categoryAtLandfall;
-        this.maximumSustainedWinds = maximumSustainedWinds;
-        this.centralPressureAtLandfall = centralPressureAtLandfall;
-        this.estimatedDamage = estimatedDamage;
-        this.fatalities = fatalities;
-        this.notes = notes;
-    }
 
     public String getName() {
         return name;
